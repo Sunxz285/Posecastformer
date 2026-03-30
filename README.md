@@ -2,7 +2,7 @@
 
 PoseCastFormer is a state-of-the-art 3D human pose estimation model that leverages transformer architecture for accurate 3D pose estimation from 2D keypoints.
 
-## 📋 Table of Contents
+##  Table of Contents
 
 - [Dependencies](#dependencies)
 - [Dataset](#dataset)
@@ -12,7 +12,7 @@ PoseCastFormer is a state-of-the-art 3D human pose estimation model that leverag
 - [Visualization](#visualization)
 - [License](#license)
 
-## 🔧 Dependencies
+##  Dependencies
 
 The project requires the following dependencies:
 
@@ -41,7 +41,7 @@ Install the required packages using pip:
 pip install numpy torch tensorboardX pyyaml matplotlib opencv-python scipy scikit-learn prettytable tqdm ffmpeg-python
 ```
 
-## 📊 Dataset
+##  Dataset
 
 The model requires the following data files:
 
@@ -70,7 +70,7 @@ data/
     └── h36m_sh_conf_cam_source_final.pkl
 ```
 
-## 🚀 Training
+##  Training
 
 
 
@@ -88,7 +88,7 @@ data/
 - `--checkpoint`: Checkpoint directory for saving models
 dom seed for reproducibility
 
-## 📈 Evaluation
+##  Evaluation
 
 ### Using test_metrics.py
 
@@ -109,7 +109,7 @@ python test_metrics.py --config configs/pose3d/MB_train_h36m_posecastformer_F_la
 - **MPJVE** (Mean Per-Joint Velocity Error)
 - **PA-MPJPE** (Procrustes-Aligned MPJPE)
 
-## 🌍 Wild Inference
+##  Wild Inference
 
 ### Using test_3dpw.py
 
@@ -132,7 +132,7 @@ python test_3dpw.py --config configs/pose3d/MB_train_h36m_posecastformer_scratch
 data_root = "F:/3DPW/sequenceFiles/sequenceFiles/test"  # Change to your 3DPW path
 ```
 
-## 🎬 Visualization
+##  Visualization
 
 ### Using visualization/run.py
 
@@ -147,7 +147,7 @@ For detailed explanations of all visualization parameters, please refer to the V
 [https://github.com/facebookresearch/VideoPose3D/blob/main/DOCUMENTATION.md](https://github.com/facebookresearch/VideoPose3D/blob/main/DOCUMENTATION.md)
 
 
-## 📄 License
+##  License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
