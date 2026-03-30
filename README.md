@@ -53,10 +53,10 @@ The model requires the following data files:
    - `data/data_2d_h36m_cpn_ft_h36m_dbb.npz` - CPN detected 2D poses
    - `data/motion3d/h36m_sh_conf_cam_source_final.pkl` - Preprocessed motion data
 
-For the three files `data_3d_h36m.npz`, `data_2d_h36m_gt.npz`, and `data_2d_h36m_cpn_ft_h36m_dbb.npz`, please refer to the official dataset setup guide from VideoPose3D:  
+For the three files data_3d_h36m.npz, data_2d_h36m_gt.npz, and data_2d_h36m_cpn_ft_h36m_dbb.npz, please refer to the official dataset setup guide from VideoPose3D:  
 [https://github.com/facebookresearch/VideoPose3D/blob/main/DATASETS.md](https://github.com/facebookresearch/VideoPose3D/blob/main/DATASETS.md)
 
-For the file `h36m_sh_conf_cam_source_final.pkl`, please refer to the data preparation guide from MotionBERT:  
+For the file h36m_sh_conf_cam_source_final.pkl, please refer to the data preparation guide from MotionBERT:  
 [https://github.com/Walter0807/MotionBERT/blob/main/docs/pose3d.md](https://github.com/Walter0807/MotionBERT/blob/main/docs/pose3d.md)
 
 ### Data Directory Structure
