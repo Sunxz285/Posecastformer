@@ -78,8 +78,7 @@ data/
 
 **Basic Training:**
 ```bash
- python train.py --config configs/pose3d/MB_train_h36m_posecastformer_scratch_SH.yaml \
-                --checkpoint checkpoint/posecastformer_scratch_SH \
+ python train.py --config configs/pose3d/MB_train_h36m_posecastformer_scratch_SH.yaml --checkpoint checkpoint/pose3d/posecastformer_scratch_SH                                                
                 
 ```
 ### Training Configuration Options
@@ -95,9 +94,7 @@ dom seed for reproducibility
 Evaluate model performance on Human3.6M dataset:
 
 ```bash
-python test_metrics.py --config configs/pose3d/MB_train_h36m_posecastformer_F_large.yaml \
-                      --checkpoint checkpoint/posecastformer_large/best_epoch.bin \
-                      --log result\test_results_H36M.log \
+python test_metrics.py --config configs/pose3d/MB_train_h36m_posecastformer_scratch_SH.yaml --checkpoint checkpoint/pose3d/posecastformer_scratch_SH/best_epoch.bin --log result\test_results_H36M.log 
 ```
 
 **Parameters:**
@@ -116,9 +113,7 @@ python test_metrics.py --config configs/pose3d/MB_train_h36m_posecastformer_F_la
 Perform inference on in-the-wild 3DPW dataset:
 
 ```bash
-python test_3dpw.py --config configs/pose3d/MB_train_h36m_posecastformer_scratch_SH.yaml \
-                --checkpoint checkpoint/posecastformer_scratch_SH/best_epoch.bin \
-                    --log  result\results_3dpw.log             
+python test_3dpw.py --config configs/pose3d/MB_train_h36m_posecastformer_scratch_SH.yaml --checkpoint checkpoint/posecastformer_scratch_SH/best_epoch.bin --log  result\results_3dpw.log             
 ```
 
 **Parameters:**
@@ -140,7 +135,7 @@ Generate visualizations and animations:
 
 ```bash
 # Basic visualization(example)
- python visualization/run.py -k cpn_ft_h36m_dbb -c checkpoint --evaluate best_epoch.bin --backbone posecastformer --render --viz-subject S9 --viz-action "SittingDown" --viz-camera 0 --viz-video "F: H36M\S9\Videos\SittingDown.55011271.mp4" --viz-output output.mp4
+ python visualization/run.py -k cpn_ft_h36m_dbb -c checkpoint --evaluate best_epoch.bin --backbone posecastformer --render --viz-subject S9 --viz-action "SittingDown" --viz-camera 0 --viz-video "F:H36M\S9\Videos\SittingDown.55011271.mp4" --viz-output output.mp4
 ```
 
 For detailed explanations of all visualization parameters, please refer to the VideoPose3D documentation:  
